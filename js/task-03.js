@@ -24,5 +24,6 @@ gallery.insertAdjacentHTML(
   "beforeend",
   images
     .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+    .join('')
 );
 
