@@ -12,3 +12,17 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const gallery = document.querySelector(".gallery");
+
+// Метод insertAdjacentHTML()вставляє HTML-код у вказану позицію.
+// element.insertAdjacentHTML(position, html)
+// beforeend =	До кінця елемента (останній дочірній)
+
+gallery.insertAdjacentHTML(
+  "beforeend",
+  images
+    .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+);
+
