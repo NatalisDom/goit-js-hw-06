@@ -32,7 +32,7 @@ button {
 
 .gallery img {
   display: block;
-  width: 620px;
+  width: 500px;
   height: 100%;
   object-fit: cover;
 }
